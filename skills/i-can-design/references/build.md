@@ -14,13 +14,13 @@ Needs `designs/<slug>/brief.md` with `Status: approved`. Without it, refuse and 
 | Surface | Leads | Supports | Not used |
 |---|---|---|---|
 | marketing | `design-taste-frontend` (art direction, layout, copy density, imagery) | impeccable craft floor, `emil-design-eng` motion, ux-ui `design-tokens` / `a11y-audit` | — |
-| product | the project's design system, then ux-ui (`design-screen`, `data-dashboard` for dense data, `design-component`, `design-code`) | impeccable (`harden`, `clarify`, `polish`), `emil-design-eng` for interactions | `design-taste-frontend` (it covers landing pages, not app UI) |
+| product | the project's design system, then ux-ui (`design-screen`, `data-dashboard` for dense data, `design-component`, `design-code`) | impeccable (`harden`, `clarify`, `polish`), `emil-design-eng` for interactions | `design-taste-frontend` (it builds company and product websites, not screens inside an app) |
 | redesign | ux-ui `redesign` or impeccable `audit` to find what to change; keep functionality | the route of the underlying surface | — |
 | no design system yet | ux-ui `brandkit` (or `design-tokens`) from the brief's direction first, then the surface route | | |
 
 How to use each dependency inside this step:
 
-- **design-taste-frontend**: skip its own brief inference; the approved brief is the brief. Apply its layout, typography and content rules that match the chosen direction.
+- **design-taste-frontend**: the approved brief replaces its own intake; apply its layout, typography, imagery and content rules that match the chosen direction. It ships a browser checker and a Stop-hook gate (`scripts/gate.mjs`, needs Node); its findings count as review evidence.
 - **impeccable**: read its `craft-floor` reference before UI edits. When it asks for `PRODUCT.md` / `DESIGN.md`, write them from the brief rather than re-interviewing the user, and only in the project when the user agrees (they are files in their repo).
 - **ux-ui-agent-skills**: load `design-doctrine` first. Its rules (no emoji, tokens by intent, the eight states) apply unless the brief says otherwise.
 - **emil-design-eng**: invoke it with a concrete question ("how should the plan-switch toggle animate for a calm feel?"); invoked bare, it only greets.
