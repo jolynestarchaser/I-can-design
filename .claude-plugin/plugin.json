@@ -1,0 +1,10 @@
+{
+  "name": "i-can-design",
+  "version": "0.1.0",
+  "description": "Feeling first, then pixels: interviews you about how a design should feel, writes a checkable brief, offers directions, then builds and reviews the UI against the brief with before/after evidence.",
+  "author": { "name": "jolynestarchaser" },
+  "license": "MIT",
+  "homepage": "https://github.com/jolynestarchaser/I-can-design",
+  "repository": "https://github.com/jolynestarchaser/I-can-design",
+  "keywords": ["design", "frontend", "ui", "ux", "design-brief", "anti-slop"]
+}

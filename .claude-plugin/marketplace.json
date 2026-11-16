@@ -1,0 +1,12 @@
+{
+  "name": "i-can-design",
+  "owner": { "name": "jolynestarchaser" },
+  "description": "I can design for Claude Code: a feeling-first design interview, a checkable brief, then build and evidence-based review.",
+  "plugins": [
+    {
+      "name": "i-can-design",
+      "source": "./",
+      "description": "Design interview to approved brief to built and reviewed UI, without AI-default slop."
+    }
+  ]
+}
