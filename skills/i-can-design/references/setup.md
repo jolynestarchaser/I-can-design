@@ -30,6 +30,7 @@ A skill counts as installed when it appears in this session's skill list (plugin
 | `ux-ui-agent-skills` (plugin) | required | tokens, components, a11y, quality gates, `design-critic` agent | `/plugin marketplace add plugin87/ux-ui-agent-skills`, then `/plugin install ux-ui-agent-skills@ux-ui-agent-skills` |
 | `impeccable` (plugin) | required | craft floor, critique, audit, polish, harden | `/plugin marketplace add pbakaus/impeccable`, then `/plugin install impeccable@impeccable` |
 | `design-taste-frontend` | required for marketing surfaces | art direction, layout and copy for landing pages and portfolios | `https://github.com/Leonxlnx/taste-skill` → `skills/taste-skill`, copied to `~/.claude/skills/design-taste-frontend` |
+| `grilling` | required | runs the interview and the direction grilling as design-tree rounds | `https://github.com/mattpocock/skills` → `skills/productivity/grilling` |
 | `emil-design-eng` | required | motion, interaction and polish decisions | `https://github.com/emilkowalski/skills` → `skills/emil-design-eng` |
 | `review-animations`, `improve-animations` | optional | deeper motion review | `https://github.com/emilkowalski/skills` → `skills/<name>` |
 | `chrome-devtools-mcp` (plugin) | optional | screenshots for evidence | `/plugin install chrome-devtools-mcp@claude-plugins-official` |
@@ -46,6 +47,8 @@ If any are missing:
    cp -r "$tmp/taste/skills/taste-skill" ~/.claude/skills/design-taste-frontend
    git clone --depth 1 https://github.com/emilkowalski/skills.git "$tmp/emil"
    cp -r "$tmp/emil/skills/emil-design-eng" ~/.claude/skills/
+   git clone --depth 1 https://github.com/mattpocock/skills.git "$tmp/mattpocock"
+   cp -r "$tmp/mattpocock/skills/productivity/grilling" ~/.claude/skills/   # retro: skills/engineering/retro
    ```
 
 3. Plugins: give the user the `/plugin` commands to type; a session cannot run slash commands for them. On Windows, `/plugin marketplace add plugin87/ux-ui-agent-skills` can fail with `invalid path 'design-systems/library/com7/DESIGN.md'` (`com7` is a reserved name for Git on Windows). Tell the user and offer the workaround, which they choose: clone it once with `git -c core.protectNTFS=false clone https://github.com/plugin87/ux-ui-agent-skills.git <folder>` and add that folder as the marketplace (`/plugin marketplace add <folder>`). The setting applies to that one command only; it lets Git write the `com7` folder, which some Windows versions still refuse, so treat it as a best effort.

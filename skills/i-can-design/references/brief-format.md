@@ -69,4 +69,10 @@ Before approval, show **two or three directions** that all satisfy the criteria 
 
 Give its absolute path so the user can open it. When the project already has a design system, directions vary only what the system leaves open (layout, density, imagery, motion), and say so.
 
-The user picks, mixes or asks for another round. Record the result under **Direction**, show the full brief, and set `Status: approved` only on the user's confirmation.
+The user picks, mixes or asks for another round. Record the result under **Direction**.
+
+## Grill the direction
+
+Before approval, load `grilling` once more and walk the chosen direction screen by screen. The tree per screen: each state in its row (empty, loading, error, long content, no image), the mobile layout of its key block, dark mode when in scope, where motion happens and what reduced motion shows, and every `TODO(content)` still open (who supplies it, by when). Look up what the project already decides; ask only what it leaves open. Answers fill the **Screens** table and **Decisions**. Done when the frontier is empty.
+
+Then show the full brief and set `Status: approved` only on the user's confirmation.

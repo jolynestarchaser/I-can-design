@@ -7,8 +7,8 @@
 ## Flow
 
 1. **Setup**: workspace, projects and their existing design systems, dependency install.
-2. **Interview**: rounds of at most four questions, each with a recommended answer. Feeling words become observable criteria ("calm" = one accent hue, motion only on interaction, ≤ 200 ms). A slop list (gradient text, centered hero + three cards, invented testimonials, …) is shown, and you decide what stays.
-3. **Brief + directions**: `designs/<slug>/brief.md` and `directions.html`, you pick, the brief is approved.
+2. **Interview** (driven by Matt Pocock's `grilling`): design-tree rounds of at most four questions, each with a recommended answer. Feeling words become observable criteria ("calm" = one accent hue, motion only on interaction, ≤ 200 ms). A slop list (gradient text, centered hero + three cards, invented testimonials, …) is shown, and you decide what stays.
+3. **Brief + directions**: `designs/<slug>/brief.md` and `directions.html`; you pick a direction, it is grilled screen by screen (states, mobile, dark mode, motion, missing content), then the brief is approved.
 4. **Build**: routed by surface. Marketing pages lead with taste-skill; product UI (dashboards, forms, app screens) leads with your design system and ux-ui-agent-skills; impeccable sets the craft floor; Emil Kowalski's skill handles motion.
 5. **Review**: screenshots per viewport, a verdict per brief criterion (Met / Not met / Unmeasured, each citing a file), a slop scan, one independent critic, one fix round.
 6. **Hand-off**: commit only when you ask; `/retro` suggested.
@@ -53,6 +53,7 @@ Setup installs these from their upstream sources after asking; nothing from them
 | `design-taste-frontend` | required for marketing pages | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | MIT |
 | `emil-design-eng` (+ optional `review-animations`, `improve-animations`) | required | [emilkowalski/skills](https://github.com/emilkowalski/skills) by Emil Kowalski | MIT |
 | `chrome-devtools-mcp` (plugin) | optional, screenshots | [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Apache-2.0 |
+| `grilling` | required | [mattpocock/skills](https://github.com/mattpocock/skills) by Matt Pocock | MIT |
 | `retro` | optional, user-invoked | [mattpocock/skills](https://github.com/mattpocock/skills) by Matt Pocock | MIT |
 
 The slop list in `references/interview.md` draws on the ideas in [avoid-ai-design](https://github.com/funboy322/avoid-ai-design) by ungspirit (MIT); it is reworded, not copied.

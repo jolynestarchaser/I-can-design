@@ -4,8 +4,10 @@ The interview is the product. Its job: turn "make it look good" into decisions t
 
 ## How to ask
 
-- Rounds of **at most four questions**, in `report_language`. Each question opens with the decision in plain words, then a **recommended answer** with a one-line reason drawn from what you already know (input, project, earlier answers). The user can reply "ok" to take every recommendation.
-- Ask only what changes the work. Anything you can read from the project (stack, existing tokens, fonts in use, component library) you look up and state as a fact in the round, not a question.
+Load `grilling` and run its rounds: this file is the **design tree** it walks (job → feeling → references → constraints), and the rounds below are its usual frontiers. A later branch opens as soon as its prerequisites are settled, so a short request can cover two rounds at once.
+
+- At most **four questions** per round, in `report_language`. Each question opens with the decision in plain words, then a **recommended answer** with a one-line reason drawn from what you already know (input, project, earlier answers). The user can reply "ok" to take every recommendation.
+- Facts are your job, decisions are theirs. Anything you can read from the project (stack, existing tokens, fonts in use, component library) you look up and state as a fact in the round, not a question.
 - After each round, say in one line what the answers settled and what is still open.
 - When the user says "you decide", take the recommendation and record it as an **assumption** in the brief. Assumptions are shown back at approval.
 - Stop when every section of the brief has an answer or an assumption. Typical: three or four rounds; a small component can finish in one.

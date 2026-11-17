@@ -9,6 +9,8 @@ Run `/i-can-design setup` first; every check should end `OK`, `FIXED` or an acce
 | Plain request | `/i-can-design a pricing page for our app` | Classifies surface (asks if unsure), runs rounds of ≤ 4 questions with recommended answers, no code written |
 | Feeling to criteria | User answers "calm, confident" | Each word turned into observable criteria the user confirms; an unobservable word is asked again with a concrete pair |
 | Slop decisions | Round 3 | Slop list shown; every kept item has a reason in the brief, the rest are banned |
+| Grilling rounds | Interview | `grilling` loaded; each round asks the whole frontier with numbered questions and recommended answers; facts looked up, not asked |
+| Direction grilled | User picks a direction | Second grilling pass per screen (states, mobile, dark, motion, open content) before `Status: approved` |
 | You decide | User answers "you decide" | Recommendation taken and listed under Assumptions, shown at approval |
 | Directions | End of interview | `directions.html` with 2–3 panels using the user's content; absolute path given |
 | Not a go | User approves the brief | `Status: approved`, stops and names `/i-can-design build <slug>`; no code |
